@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Seatwork 2</title>
+</head>
+<body class="bg-warning">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container bg-success text-center p-5">
+        <center><h1>Minutes Converter</h1>
+            <input type="text" id="id1" placeholder="Enter time in minutes"><br>
+    <center><input type="submit" value="Seconds" onclick="myFunction()">
+    <center><input type="submit" value="Hours" onclick="myFunctionTwo()">
+    <center><input type="submit" value="Days" onclick="myFunctionThree()"><br>
+    <center><a href="title.html" class="btn btn-danger">Back to Home</a>
+    <p id="answer"></p>
+    </div>
+    <script>
+        function myFunction() {
+            var num1 = document.getElementById('id1').value;
+            var num2 = 60
+            var answer = num1 * num2;
+            document.getElementById('answer').innerHTML = "In Seconds it is " + answer + " second/s";
+        }
+        function myFunctionTwo() {
+            var num1 = document.getElementById('id1').value;
+            var num2 = 60
+            var answer = num1 / num2;
+            document.getElementById('answer').innerHTML = "In Hours it is " + answer + " Hour/s";
+        }
+        function myFunctionThree() {
+            var num1 = document.getElementById('id1').value;
+            var num2 = 1440
+            var answer = num1 / num2;
+            document.getElementById('answer').innerHTML = "In Days it is " + answer + " Day/s";
+        }
+    </script>
+</body>
+</html>
